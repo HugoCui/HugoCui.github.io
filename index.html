@@ -383,9 +383,13 @@ understanding the mechanisms of learning in high dimensions, and the information
   <center><h3>News</h3></center>
   <p><br><br></p>
 <ul>
-<li><p>[<i style="color:blue;">July 2023</i>] Presenting our analysis of error rates 
+<li><p>[<i style="color:blue;">Sept. 2023</i>] Our sharp analysis of <a href="https://arxiv.org/pdf/2305.11041.pdf">denoising auto-encoders</a> 
+  has been accepted in NeurIPS 2023 as a spotlight!</p></li>
+<li><p>[<i style="color:blue;">Aug. 2023</i>] Our paper on <a href="https://arxiv.org/pdf/2201.12655.pdf">error scaling laws</a> 
+in kernel classification has been published in MLST!</p></li>
+<li><p>[<i style="color:blue;">Jul. 2023</i>] Presenting our analysis of error rates 
 in kernel regression and classification @ the 5<sup>th</sup> workshop on Neural Scaling Laws in Honolulu </p></li>
-<li><p>[<i style="color:blue;">July 2023</i>] Presenting my latest work on Bayesian learning and deep random features @ ICML 2023</p></li>
+<li><p>[<i style="color:blue;">Jul. 2023</i>] Presenting my latest work on Bayesian learning and deep random features @ ICML 2023</p></li>
 </ul>
 </div>
 
@@ -396,6 +400,58 @@ in kernel regression and classification @ the 5<sup>th</sup> workshop on Neural 
   <center><h3>Publications</h3></center>
   <p><br><br></p>
 <ul>
+  <li>
+    <p>
+        <i>High-dimensional Asymptotics of Denoising Autoencoders, </i>
+        <b>
+          Hugo Cui,
+        </b>
+        Lenka Zdeborová <i style="color:green;">NeurIPS 2023 (spotlight).</i>
+        [<a href="https://arxiv.org/pdf/2305.11041.pdf">arXiv</a>
+        ] 
+        <span class="toggle-trigger">
+            [Show Abstract]
+            <span>
+                <div class="toggle-wrap">
+                    <b>Abstract:</b>
+                    We address the problem of denoising data from a Gaussian mixture using a two-layer non-linear
+autoencoder with tied weights and a skip connection. We consider the high-dimensional limit where
+the number of training samples and the input dimension jointly tend to infinity while the number of
+hidden units remains bounded. We provide closed-form expressions for the denoising mean-squared
+test error. Building on this result, we quantitatively characterize the advantage of the considered
+architecture over the autoencoder without the skip connection that relates closely to principal
+component analysis. We further show that our results accurately capture the learning curves on a
+range of real data sets.
+
+                </div>
+    </p></li>
+    <li>
+      <p>
+          <i>Error rates for kernel classification under source and capacity conditions, </i>
+          <b>
+            Hugo Cui,
+          </b>
+          Bruno Loureiro, Florent Krzakala, Lenka Zdeborová <i style="color:green;">MLST 2023.</i>
+          [<a href="https://arxiv.org/pdf/2201.12655.pdf">arXiv</a>
+          ] 
+          <span class="toggle-trigger">
+              [Show Abstract]
+              <span>
+                  <div class="toggle-wrap">
+                      <b>Abstract:</b>
+                      In this manuscript, we consider the problem of kernel classification. Works on kernel regression
+have shown that the rate of decay of the prediction error with the number of samples for a large
+class of data-sets is well characterized by two quantities: the capacity and source of the data-set.
+In this work, we compute the decay rates for the misclassification (prediction) error under the
+Gaussian design, for data-sets satisfying source and capacity assumptions. We derive the rates as a
+function of the source and capacity coefficients for two standard kernel classification settings, namely
+margin-maximizing Support Vector Machines (SVM) and ridge classification, and contrast the two
+methods. As a consequence, we find that the known worst-case rates are loose for this class of
+data-sets. Finally, we show that the rates presented in this work are also observed on real data-sets.
+
+                  </div>
+      </p></li>
+
 <li>
   <p>
       <i>Bayes-optimal learning of 
@@ -573,59 +629,6 @@ comparison with the performance of some other popular active learning strategies
   <center><h3>Preprints</h3></center>
   <p><br><br></p>
 <ul>
-  <li>
-    <p>
-        <i>High-dimensional Asymptotics of Denoising Autoencoders, </i>
-        <b>
-          Hugo Cui,
-        </b>
-        Lenka Zdeborová <i style="color:green;">Preprint.</i>
-        [<a href="https://arxiv.org/pdf/2305.11041.pdf">arXiv</a>
-        ] 
-        <span class="toggle-trigger">
-            [Show Abstract]
-            <span>
-                <div class="toggle-wrap">
-                    <b>Abstract:</b>
-                    We address the problem of denoising data from a Gaussian mixture using a two-layer non-linear
-autoencoder with tied weights and a skip connection. We consider the high-dimensional limit where
-the number of training samples and the input dimension jointly tend to infinity while the number of
-hidden units remains bounded. We provide closed-form expressions for the denoising mean-squared
-test error. Building on this result, we quantitatively characterize the advantage of the considered
-architecture over the autoencoder without the skip connection that relates closely to principal
-component analysis. We further show that our results accurately capture the learning curves on a
-range of real data sets.
-
-                </div>
-    </p></li>
-
-
-    <li>
-      <p>
-          <i>Error rates for kernel classification under source and capacity conditions, </i>
-          <b>
-            Hugo Cui,
-          </b>
-          Bruno Loureiro, Florent Krzakala, Lenka Zdeborová <i style="color:green;">Preprint.</i>
-          [<a href="https://arxiv.org/pdf/2201.12655.pdf">arXiv</a>
-          ] 
-          <span class="toggle-trigger">
-              [Show Abstract]
-              <span>
-                  <div class="toggle-wrap">
-                      <b>Abstract:</b>
-                      In this manuscript, we consider the problem of kernel classification. Works on kernel regression
-have shown that the rate of decay of the prediction error with the number of samples for a large
-class of data-sets is well characterized by two quantities: the capacity and source of the data-set.
-In this work, we compute the decay rates for the misclassification (prediction) error under the
-Gaussian design, for data-sets satisfying source and capacity assumptions. We derive the rates as a
-function of the source and capacity coefficients for two standard kernel classification settings, namely
-margin-maximizing Support Vector Machines (SVM) and ridge classification, and contrast the two
-methods. As a consequence, we find that the known worst-case rates are loose for this class of
-data-sets. Finally, we show that the rates presented in this work are also observed on real data-sets.
-
-                  </div>
-      </p></li>
 
 
 </ul>
