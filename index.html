@@ -383,13 +383,15 @@ understanding the mechanisms of learning in high dimensions, and the information
   <center><h3>News</h3></center>
   <p><br><br></p>
 <ul>
+<li><p>[<i style="color:orange;">Oct. 2023</i>] New preprint out! In <a href="https://arxiv.org/abs/2310.03575">our latest work</a>
+we conduct a sharp analysis of a generative model learning from a limited number of samples. </p></li>
 <li><p>[<i style="color:blue;">Sept. 2023</i>] Our sharp analysis of <a href="https://arxiv.org/pdf/2305.11041.pdf">denoising auto-encoders</a> 
   has been accepted in NeurIPS 2023 as a spotlight!</p></li>
 <li><p>[<i style="color:blue;">Aug. 2023</i>] Our paper on <a href="https://arxiv.org/pdf/2201.12655.pdf">error scaling laws</a> 
 in kernel classification has been published in MLST!</p></li>
-<li><p>[<i style="color:blue;">Jul. 2023</i>] Presenting our analysis of error rates 
+<li><p>[<i style="color:red;">Jul. 2023</i>] Presenting our analysis of error rates 
 in kernel regression and classification @ the 5<sup>th</sup> workshop on Neural Scaling Laws in Honolulu </p></li>
-<li><p>[<i style="color:blue;">Jul. 2023</i>] Presenting my latest work on Bayesian learning and deep random features @ ICML 2023</p></li>
+<li><p>[<i style="color:red;">Jul. 2023</i>] Presenting my latest work on Bayesian learning and deep random features @ ICML 2023</p></li>
 </ul>
 </div>
 
@@ -629,7 +631,32 @@ comparison with the performance of some other popular active learning strategies
   <center><h3>Preprints</h3></center>
   <p><br><br></p>
 <ul>
+  <li>
+    <p>
+        <i>Analysis of learning a flow-based generative model from limited sample complexity, </i>
+        <b>
+          Hugo Cui,
+        </b>
+        Florent Krzakala, Eric Vanden-Eijnden and Lenka Zdeborová <i style="color:green;"> preprint.</i>
+        [<a href="https://arxiv.org/abs/2310.03575">arXiv</a>
+        ] 
+        <span class="toggle-trigger">
+            [Show Abstract]
+            <span>
+                <div class="toggle-wrap">
+                    <b>Abstract:</b>
+                    We study the problem of training a flow-based generative model, parametrized by a two-layer autoencoder, 
+                    to sample from a high-dimensional Gaussian mixture. We provide a sharp end-to-end analysis of the problem.
+                     First, we provide a tight closed-form characterization of the learnt velocity field, when parametrized by a 
+                     shallow denoising auto-encoder trained on a finite number n of samples from the target distribution. 
+                     Building on this analysis, we provide a sharp description of the corresponding generative flow, 
+                     which pushes the base Gaussian density forward to an approximation of the target density. 
+                     In particular, we provide closed-form formulae for the distance between the mean of the generated mixture 
+                     and the mean of the target mixture, which we show decays as 1/n. Finally, 
+                     this rate is shown to be in fact Bayes-optimal.
 
+                </div>
+    </p></li>
 
 </ul>
 </div>
