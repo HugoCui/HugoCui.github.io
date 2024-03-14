@@ -383,6 +383,14 @@ understanding the mechanisms of learning in high dimensions, and the information
   <center><h3>News</h3></center>
   <p><br><br></p>
 <ul>
+<li><p>[<i style="color:red;">Feb. 2024</i>] Three new preprints out! (1/3) In <a href="https://arxiv.org/pdf/2402.03902.pdf"> the first work</a>,
+    we investigate a solvable model of attention mechanism, and evidence a phase transition from positional to semantic learning.</p></li>
+<li><p>[<i style="color:red;">Feb. 2024</i>] (2/3) In <a href="https://arxiv.org/pdf/2402.04980.pdf"> the second work</a>, 
+      we sharply characterized how feature learning arises in shallow networks after a single gradient step.</p></li>
+<li><p>[<i style="color:red;">Feb. 2024</i>] (3/3) Finally, in <a href="https://arxiv.org/abs/2402.13999"> the last work</a>, 
+        we explore the learning of deep random networks with structured weights.</p></li>
+<li><p>[<i style="color:green;">Jan. 2024</i>] I will be presenting <a href="https://arxiv.org/abs/2310.03575">our work on flow-based models</a>
+    at ICLR 2024 in Vienna. </p></li>
 <li><p>[<i style="color:orange;">Oct. 2023</i>] New preprint out! In <a href="https://arxiv.org/abs/2310.03575">our latest work</a>
 we conduct a sharp analysis of a generative model learning from a limited number of samples. </p></li>
 <li><p>[<i style="color:blue;">Sept. 2023</i>] Our sharp analysis of <a href="https://arxiv.org/pdf/2305.11041.pdf">denoising auto-encoders</a> 
@@ -402,6 +410,33 @@ in kernel regression and classification @ the 5<sup>th</sup> workshop on Neural 
   <center><h3>Publications</h3></center>
   <p><br><br></p>
 <ul>
+
+  <li>
+    <p>
+        <i>Analysis of learning a flow-based generative model from limited sample complexity, </i>
+        <b>
+          Hugo Cui,
+        </b>
+        Florent Krzakala, Eric Vanden-Eijnden and Lenka Zdeborová <i style="color:green;"> ICLR 2024.</i>
+        [<a href="https://arxiv.org/abs/2310.03575">arXiv</a>
+        ] 
+        <span class="toggle-trigger">
+            [Show Abstract]
+            <span>
+                <div class="toggle-wrap">
+                    <b>Abstract:</b>
+                    We study the problem of training a flow-based generative model, parametrized by a two-layer autoencoder, 
+                    to sample from a high-dimensional Gaussian mixture. We provide a sharp end-to-end analysis of the problem.
+                     First, we provide a tight closed-form characterization of the learnt velocity field, when parametrized by a 
+                     shallow denoising auto-encoder trained on a finite number n of samples from the target distribution. 
+                     Building on this analysis, we provide a sharp description of the corresponding generative flow, 
+                     which pushes the base Gaussian density forward to an approximation of the target density. 
+                     In particular, we provide closed-form formulae for the distance between the mean of the generated mixture 
+                     and the mean of the target mixture, which we show decays as 1/n. Finally, 
+                     this rate is shown to be in fact Bayes-optimal.
+
+                </div>
+    </p></li>
   <li>
     <p>
         <i>High-dimensional Asymptotics of Denoising Autoencoders, </i>
@@ -633,30 +668,91 @@ comparison with the performance of some other popular active learning strategies
 <ul>
   <li>
     <p>
-        <i>Analysis of learning a flow-based generative model from limited sample complexity, </i>
+        <i>A phase transition between positional and semantic learning in a solvable model of dot-product attention, </i>
         <b>
           Hugo Cui,
         </b>
-        Florent Krzakala, Eric Vanden-Eijnden and Lenka Zdeborová <i style="color:green;"> preprint.</i>
-        [<a href="https://arxiv.org/abs/2310.03575">arXiv</a>
+        Freya Behrens, Florent Krzakala, Lenka Zdeborová <i style="color:green;"> preprint</i>
+        [<a href="https://arxiv.org/pdf/2402.03902.pdf">arXiv</a>
         ] 
         <span class="toggle-trigger">
             [Show Abstract]
             <span>
                 <div class="toggle-wrap">
                     <b>Abstract:</b>
-                    We study the problem of training a flow-based generative model, parametrized by a two-layer autoencoder, 
-                    to sample from a high-dimensional Gaussian mixture. We provide a sharp end-to-end analysis of the problem.
-                     First, we provide a tight closed-form characterization of the learnt velocity field, when parametrized by a 
-                     shallow denoising auto-encoder trained on a finite number n of samples from the target distribution. 
-                     Building on this analysis, we provide a sharp description of the corresponding generative flow, 
-                     which pushes the base Gaussian density forward to an approximation of the target density. 
-                     In particular, we provide closed-form formulae for the distance between the mean of the generated mixture 
-                     and the mean of the target mixture, which we show decays as 1/n. Finally, 
-                     this rate is shown to be in fact Bayes-optimal.
+                    We investigate how a dot-product attention layer learns a positional attention matrix 
+                    (with tokens attending to each other based on their respective positions) and a semantic attention matrix
+                     (with tokens attending to each other based on their meaning). For an algorithmic task, we experimentally 
+                     show how the same simple architecture can learn to implement a solution using either the positional or
+                      semantic mechanism. On the theoretical side, we study the learning of a non-linear self-attention layer 
+                      with trainable tied and low-rank query and key matrices. In the asymptotic limit of high-dimensional data 
+                      and a comparably large number of training samples, we provide a closed-form characterization of the global 
+                      minimum of the non-convex empirical loss landscape. We show that this minimum corresponds to either a 
+                      positional or a semantic mechanism and evidence an emergent phase transition from the former to the latter 
+                      with increasing sample complexity. Finally, we compare the dot-product attention layer to linear positional 
+                      baseline, and show that it outperforms the latter using the semantic mechanism provided it has access to 
+                      sufficient data.
 
                 </div>
     </p></li>
+
+    <li>
+      <p>
+          <i>Asymptotics of feature learning in two-layer networks after one gradient-step, </i>
+          <b>
+            Hugo Cui,
+          </b>
+          Luca Pesce, Yatin Dandi, Florent Krzakala, Yue M Lu, Lenka Zdeborová, Bruno Loureiro <i style="color:green;"> ICLR 2024.</i>
+          [<a href="https://arxiv.org/pdf/2402.04980.pdf">arXiv</a>
+          ] 
+          <span class="toggle-trigger">
+              [Show Abstract]
+              <span>
+                  <div class="toggle-wrap">
+                      <b>Abstract:</b>
+                      In this manuscript we investigate the problem of how two-layer neural networks learn features from data,
+                       and improve over the kernel regime, after being trained with a single gradient descent step. 
+                       Leveraging a connection from (Ba et al., 2022) with a non-linear spiked matrix model and recent progress on 
+                       Gaussian universality (Dandi et al., 2023), we provide an exact asymptotic description of the generalization 
+                       error in the high-dimensional limit where the number of samples , the width  and the input dimension  grow at
+                        a proportional rate. We characterize exactly how adapting to the data is crucial for the network to 
+                        efficiently learn non-linear functions in the direction of the gradient -- where at initialization it can 
+                        only express linear functions in this regime. To our knowledge, our results provides the first tight 
+                        description of the impact of feature learning in the generalization of two-layer neural networks in the 
+                        large learning rate regime , beyond perturbative finite width corrections of the conjugate and neural 
+                        tangent kernels.
+  
+                  </div>
+      </p></li>
+
+      <li>
+        <p>
+            <i>Asymptotics of Learning with Deep Structured (Random) Features, </i>
+            Dominik Schröder, Daniil Dmitriev,
+            <b>
+              Hugo Cui,
+            </b>
+            Bruno Loureiro <i style="color:green;"> ICLR 2024.</i>
+            [<a href="https://arxiv.org/abs/2402.13999">arXiv</a>
+            ] 
+            <span class="toggle-trigger">
+                [Show Abstract]
+                <span>
+                    <div class="toggle-wrap">
+                        <b>Abstract:</b>
+                        For a large class of feature maps we provide a tight asymptotic characterisation of the 
+                        test error associated with learning the readout layer, in the high-dimensional limit where 
+                        the input dimension, hidden layer widths, and number of training samples are proportionally large. 
+                        This characterization is formulated in terms of the population covariance of the features. 
+                        Our work is partially motivated by the problem of learning with Gaussian rainbow neural networks, 
+                        namely deep non-linear fully-connected networks with random but structured weights, 
+                        whose row-wise covariances are further allowed to depend on the weights of previous layers. 
+                        For such networks we also derive a closed-form formula for the feature covariance in terms of the 
+                        weight matrices. We further find that in some cases our results can capture feature maps learned by deep, 
+                        finite-width neural networks trained under gradient descent.
+    
+                    </div>
+        </p></li>
 
 </ul>
 </div>
