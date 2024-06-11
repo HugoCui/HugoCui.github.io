@@ -372,7 +372,7 @@ $(document).ready(function () {
 
 <p><br><br> <img src="circle.jpg" class="centerImage"  /></p>
 
-<p><br><br> PhD student @ <a href="https://www.epfl.ch/labs/spoc/">SPOC lab</a> at EPFL, advised by Lenka Zdeborová. I hold
+<p><br><br> I am a PhD student at <a href="https://www.epfl.ch/labs/spoc/">SPOC lab</a> at EPFL, advised by Lenka Zdeborová. I hold
   a Master degree in theoretical physics from ENS Paris. My research lies at the crossroads
   of machine learning theory, high-dimensional statistics, and statistical physics. I am interested in 
 understanding the mechanisms of learning in high dimensions, and the information-theoretic limits thereof.</p>
@@ -410,6 +410,65 @@ in kernel regression and classification @ the 5<sup>th</sup> workshop on Neural 
   <center><h3>Publications</h3></center>
   <p><br><br></p>
 <ul>
+
+  <li>
+    <p>
+        <i>Asymptotics of feature learning in two-layer networks after one gradient-step, </i>
+        <b>
+          Hugo Cui,
+        </b>
+        Luca Pesce, Yatin Dandi, Florent Krzakala, Yue M Lu, Lenka Zdeborová, Bruno Loureiro <i style="color:green;"> ICML 2024.</i>
+        [<a href="https://arxiv.org/pdf/2402.04980.pdf">arXiv</a>
+        ] 
+        <span class="toggle-trigger">
+            [Show Abstract]
+            <span>
+                <div class="toggle-wrap">
+                    <b>Abstract:</b>
+                    In this manuscript we investigate the problem of how two-layer neural networks learn features from data,
+                     and improve over the kernel regime, after being trained with a single gradient descent step. 
+                     Leveraging a connection from (Ba et al., 2022) with a non-linear spiked matrix model and recent progress on 
+                     Gaussian universality (Dandi et al., 2023), we provide an exact asymptotic description of the generalization 
+                     error in the high-dimensional limit where the number of samples , the width  and the input dimension  grow at
+                      a proportional rate. We characterize exactly how adapting to the data is crucial for the network to 
+                      efficiently learn non-linear functions in the direction of the gradient -- where at initialization it can 
+                      only express linear functions in this regime. To our knowledge, our results provides the first tight 
+                      description of the impact of feature learning in the generalization of two-layer neural networks in the 
+                      large learning rate regime , beyond perturbative finite width corrections of the conjugate and neural 
+                      tangent kernels.
+
+                </div>
+    </p></li>
+
+    <li>
+      <p>
+          <i>Asymptotics of Learning with Deep Structured (Random) Features, </i>
+          Dominik Schröder, Daniil Dmitriev,
+          <b>
+            Hugo Cui,
+          </b>
+          Bruno Loureiro <i style="color:green;"> ICML 2024.</i>
+          [<a href="https://arxiv.org/abs/2402.13999">arXiv</a>
+          ] 
+          <span class="toggle-trigger">
+              [Show Abstract]
+              <span>
+                  <div class="toggle-wrap">
+                      <b>Abstract:</b>
+                      For a large class of feature maps we provide a tight asymptotic characterisation of the 
+                      test error associated with learning the readout layer, in the high-dimensional limit where 
+                      the input dimension, hidden layer widths, and number of training samples are proportionally large. 
+                      This characterization is formulated in terms of the population covariance of the features. 
+                      Our work is partially motivated by the problem of learning with Gaussian rainbow neural networks, 
+                      namely deep non-linear fully-connected networks with random but structured weights, 
+                      whose row-wise covariances are further allowed to depend on the weights of previous layers. 
+                      For such networks we also derive a closed-form formula for the feature covariance in terms of the 
+                      weight matrices. We further find that in some cases our results can capture feature maps learned by deep, 
+                      finite-width neural networks trained under gradient descent.
+  
+                  </div>
+      </p></li>
+
 
   <li>
     <p>
@@ -696,69 +755,22 @@ comparison with the performance of some other popular active learning strategies
                 </div>
     </p></li>
 
-    <li>
-      <p>
-          <i>Asymptotics of feature learning in two-layer networks after one gradient-step, </i>
-          <b>
-            Hugo Cui,
-          </b>
-          Luca Pesce, Yatin Dandi, Florent Krzakala, Yue M Lu, Lenka Zdeborová, Bruno Loureiro <i style="color:green;"> preprint.</i>
-          [<a href="https://arxiv.org/pdf/2402.04980.pdf">arXiv</a>
-          ] 
-          <span class="toggle-trigger">
-              [Show Abstract]
-              <span>
-                  <div class="toggle-wrap">
-                      <b>Abstract:</b>
-                      In this manuscript we investigate the problem of how two-layer neural networks learn features from data,
-                       and improve over the kernel regime, after being trained with a single gradient descent step. 
-                       Leveraging a connection from (Ba et al., 2022) with a non-linear spiked matrix model and recent progress on 
-                       Gaussian universality (Dandi et al., 2023), we provide an exact asymptotic description of the generalization 
-                       error in the high-dimensional limit where the number of samples , the width  and the input dimension  grow at
-                        a proportional rate. We characterize exactly how adapting to the data is crucial for the network to 
-                        efficiently learn non-linear functions in the direction of the gradient -- where at initialization it can 
-                        only express linear functions in this regime. To our knowledge, our results provides the first tight 
-                        description of the impact of feature learning in the generalization of two-layer neural networks in the 
-                        large learning rate regime , beyond perturbative finite width corrections of the conjugate and neural 
-                        tangent kernels.
-  
-                  </div>
-      </p></li>
-
-      <li>
-        <p>
-            <i>Asymptotics of Learning with Deep Structured (Random) Features, </i>
-            Dominik Schröder, Daniil Dmitriev,
-            <b>
-              Hugo Cui,
-            </b>
-            Bruno Loureiro <i style="color:green;"> preprint.</i>
-            [<a href="https://arxiv.org/abs/2402.13999">arXiv</a>
-            ] 
-            <span class="toggle-trigger">
-                [Show Abstract]
-                <span>
-                    <div class="toggle-wrap">
-                        <b>Abstract:</b>
-                        For a large class of feature maps we provide a tight asymptotic characterisation of the 
-                        test error associated with learning the readout layer, in the high-dimensional limit where 
-                        the input dimension, hidden layer widths, and number of training samples are proportionally large. 
-                        This characterization is formulated in terms of the population covariance of the features. 
-                        Our work is partially motivated by the problem of learning with Gaussian rainbow neural networks, 
-                        namely deep non-linear fully-connected networks with random but structured weights, 
-                        whose row-wise covariances are further allowed to depend on the weights of previous layers. 
-                        For such networks we also derive a closed-form formula for the feature covariance in terms of the 
-                        weight matrices. We further find that in some cases our results can capture feature maps learned by deep, 
-                        finite-width neural networks trained under gradient descent.
     
-                    </div>
-        </p></li>
-
 </ul>
 </div>
 
-
-
+<p><br><br></p>
+<div id="recent-news" class="section level3">
+  <center><h3>Awards</h3></center>
+  <p><br><br></p>
+<ul>
+<li><p><a href="https://www.gresearch.com/news/g-research-2024-phd-prize-winners-epfl/">G-Research PhD prize in mathematics and data science</a>, EPFL 3rd prize.</p></li>
+<li><p><a href="https://www.famelab.ch/">Famelab</a> international science communication competition, Switzerland national winner, and international finalist (representing Switzerland).</p></li>
+<li><p> ENS Paris 2016 national competitive entrance exam, 1st place.</p></li>
+<li><p> Recipient of two <a href="https://www.academie-sciences.fr/fr/Laureats/laureats-2014-prix-thematiques.html">thematic awards</a> from the French
+Académie des Sciences (for (Inter)national chemistry olympiads)</p></li>
+</ul>
+</div>
 
 </div>
 
