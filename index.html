@@ -335,6 +335,9 @@ $(document).ready(function () {
 <li>
   <a href="Talks.html">Talks & teaching</a>
 </li>
+<li>
+  <a href="https://hugocui.github.io/CV.pdf">CV</a>
+</li>
 
 
 
@@ -384,6 +387,10 @@ understanding the mechanisms of learning in high dimensions, and the information
   <center><h3>News</h3></center>
   <p><br><br></p>
 <ul>
+  <li><p>[<i style="color:orange;">Sept. 2024</i>] Interested in how statistical physics ideas can be used
+  to analyze neural networks ? My <a href="https://arxiv.org/abs/2409.13904"> new review</a>
+should be of interest to computer scientists wanting to learn of such techniques, and to physicist curious of
+how these ideas apply to machine learning.</p></li>
 <li><p>[<i style="color:blue;">Jul. 2024</i>] Learn more about our work on <a href="https://arxiv.org/pdf/2402.03902.pdf"> phase transitions in attention models</a> at the HiLD workshop in ICML
 ! Our works on <a href="https://arxiv.org/pdf/2402.03902.pdf"> structured feature maps</a>
 and <a href="https://arxiv.org/pdf/2402.04980.pdf"> spiked random features</a> can be found in the main 
@@ -415,6 +422,35 @@ in kernel regression and classification @ the 5<sup>th</sup> workshop on Neural 
   <center><h3>Publications</h3></center>
   <p><br><br></p>
 <ul>
+  <li>
+    <p>
+        <i>A phase transition between positional and semantic learning in a solvable model of dot-product attention, </i>
+        <b>
+          Hugo Cui,
+        </b>
+        Freya Behrens, Florent Krzakala, Lenka Zdeborová <i style="color:green;"> NeurIPS 2024 (<b>spotlight</b>)</i>
+        [<a href="https://arxiv.org/pdf/2402.03902.pdf">arXiv</a>
+        ] 
+        <span class="toggle-trigger">
+            [Show Abstract]
+            <span>
+                <div class="toggle-wrap">
+                    <b>Abstract:</b>
+                    We investigate how a dot-product attention layer learns a positional attention matrix 
+                    (with tokens attending to each other based on their respective positions) and a semantic attention matrix
+                     (with tokens attending to each other based on their meaning). For an algorithmic task, we experimentally 
+                     show how the same simple architecture can learn to implement a solution using either the positional or
+                      semantic mechanism. On the theoretical side, we study the learning of a non-linear self-attention layer 
+                      with trainable tied and low-rank query and key matrices. In the asymptotic limit of high-dimensional data 
+                      and a comparably large number of training samples, we provide a closed-form characterization of the global 
+                      minimum of the non-convex empirical loss landscape. We show that this minimum corresponds to either a 
+                      positional or a semantic mechanism and evidence an emergent phase transition from the former to the latter 
+                      with increasing sample complexity. Finally, we compare the dot-product attention layer to linear positional 
+                      baseline, and show that it outperforms the latter using the semantic mechanism provided it has access to 
+                      sufficient data.
+
+                </div>
+    </p></li>
 
   <li>
     <p>
@@ -582,7 +618,7 @@ data-sets. Finally, we show that the rates presented in this work are also obser
 
 <li>
   <p>
-      <i>Deterministic equivalent and error universality of deep random features learning </i>
+      <i>Deterministic equivalent and error universality of deep random features learning, </i>
       Dominik Schröder<sup>*</sup>,
       <b>
         Hugo Cui<sup>*</sup>,
@@ -732,30 +768,32 @@ comparison with the performance of some other popular active learning strategies
 <ul>
   <li>
     <p>
-        <i>A phase transition between positional and semantic learning in a solvable model of dot-product attention, </i>
+        <i>High-dimensional learning of narrow neural networks </i>
         <b>
           Hugo Cui,
         </b>
-        Freya Behrens, Florent Krzakala, Lenka Zdeborová <i style="color:green;"> preprint</i>
-        [<a href="https://arxiv.org/pdf/2402.03902.pdf">arXiv</a>
+       <i style="color:green;"> preprint</i>
+        [<a href="https://arxiv.org/pdf/2409.13904">arXiv</a>
         ] 
         <span class="toggle-trigger">
             [Show Abstract]
             <span>
                 <div class="toggle-wrap">
                     <b>Abstract:</b>
-                    We investigate how a dot-product attention layer learns a positional attention matrix 
-                    (with tokens attending to each other based on their respective positions) and a semantic attention matrix
-                     (with tokens attending to each other based on their meaning). For an algorithmic task, we experimentally 
-                     show how the same simple architecture can learn to implement a solution using either the positional or
-                      semantic mechanism. On the theoretical side, we study the learning of a non-linear self-attention layer 
-                      with trainable tied and low-rank query and key matrices. In the asymptotic limit of high-dimensional data 
-                      and a comparably large number of training samples, we provide a closed-form characterization of the global 
-                      minimum of the non-convex empirical loss landscape. We show that this minimum corresponds to either a 
-                      positional or a semantic mechanism and evidence an emergent phase transition from the former to the latter 
-                      with increasing sample complexity. Finally, we compare the dot-product attention layer to linear positional 
-                      baseline, and show that it outperforms the latter using the semantic mechanism provided it has access to 
-                      sufficient data.
+                    Recent years have been marked with the fast-pace diversification and increasing ubiquity of machine learning
+applications. Yet, a firm theoretical understanding of the surprising efficiency of neural networks to learn from highdimensional data still proves largely elusive. In this endeavour, analyses inspired by statistical physics have proven
+instrumental, enabling the tight asymptotic characterization of the learning of neural networks in high dimensions, for
+a broad class of solvable models. This manuscript reviews the tools and ideas underlying recent progress in this line
+of work. We introduce a generic model – the sequence multi-index model–, which encompasses numerous previously
+studied models as special instances. This unified framework covers a broad class of machine learning architectures
+with a finite number of hidden units – including multi-layer perceptrons, autoencoders, attention mechanisms–, and
+tasks –(un)supervised learning, denoising, contrastive learning–, in the limit of large data dimension, and comparably
+large number of samples. We explicate in full detail the analysis of the learning of sequence multi-index models, using
+statistical physics techniques such as the replica method and approximate message-passing algorithms. This manuscript
+thus provides a unified presentation of analyses reported in several previous works, and a detailed overview of central
+techniques in the field of statistical physics of machine learning. This review should be a useful primer for machine
+learning theoreticians curious of statistical physics approaches; it should also be of value to statistical physicists interested
+in the transfer of such ideas to the study of neural networks.
 
                 </div>
     </p></li>
